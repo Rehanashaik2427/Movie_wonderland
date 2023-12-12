@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Some part of the Netflix</title>
+    <link rel="stylesheet" href="movie.css">
+   
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img class="logo-img" src="https://www.edigitalagency.com.au/wp-content/uploads/Netflix-logo-red-black-png.png" alt="netflix logo">
+        </div>
+
+        <div class="languages">
+            <label for="language">Select Language:</label>
+            <select id="language" onchange="filterByLanguage()">
+                <option value="all">All Languages</option>
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+                <option value="telugu">Telugu</option>
+                <option value="tamil">Tamil</option>
+                <option value="kanada">Kanada</option>
+                <!-- Add more language options as needed -->
+            </select>
+        </div>
+
+        <div class="search">
+            <div class="search-bar">
+                <input type="text" onkeyup="searchMovie()" id="search" placeholder="search movie" class="search-box"></input>
+                <img onclick="searchMovie()" class="search-icon" src="https://e7.pngegg.com/pngimages/342/516/png-clipart-computer-icons-search-icon-zooming-user-interface-computer-icons.png" alt="search-icon">
+            </div>
+        </div>
+
+        <div class="wishlist" onclick="toggleWishlist()">
+            <a href="whishlist.html" id="wishlistLink">Wishlist</a>
+        </div>
+
+        <div class="heart-button" id="wishlistButton" onclick="toggleWishlist()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.920 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+            </svg>
+        </div>
+
+
+
+    </header>
+    <section class="movies" id="movies">
+        
+    </section>
+
+    <script src="movies.js"></script>
+</body>
+</html>

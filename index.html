@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>Login_Page</title>
+</head>
+<body>
+    <div class="fullscreen-bg">
+        <img src="https://images.hindi.news18.com/ibnkhabar/uploads/2021/05/netflix.jpg" alt="Netflix Background">
+        <div class="login-container">
+            <form id="loginForm">
+                
+                <div class="textbox">
+                    <input type="text" id="username" name="username" placeholder="username" required >    
+                </div>
+                <div class="textbox">
+                    <input type="password" id="password" name="password" placeholder="password" required>
+                </div>
+
+                <button type="button" onclick="login()">Sign In</button>
+
+            </form>
+            <h4>New User?<a href="register.html">Register</a></h4>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        function login() {
+            // Your login logic goes here
+
+            // Redirect to video.html
+            window.location.href = "video.html";
+        }
+    </script>
+</body>
+</html>

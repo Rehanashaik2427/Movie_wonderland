@@ -1,0 +1,74 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#video-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
+}
+
+.buttons-container {
+   position: absolute;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    top: 250px;
+    left: 150px;
+  
+}
+
+.button {
+    margin: 10px;  
+    width: 80px; 
+    height: 30px;
+    font-size: 15px;
+}
+
+.viewall
+{
+    position: absolute;
+    margin-bottom: 10px; /* Adjust the margin as needed */
+    top: 390px;
+    right:10px;
+}
+
+.view-all-link
+{
+    font-size: 15px;
+    color: whitesmoke;
+}
+.overlay-images {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background */
+    padding: 10px; /* Optional: Add padding to the container */
+}
+
+.poster-container {
+    display: flex;
+    animation: movePosters 30s linear infinite; /* Adjust the animation duration as needed (increased to 30s for slower movement) */
+}
+.poster {
+    width: 300px; /* Set the desired width */
+    height: 300px;
+    margin-right: 20px; /* Adjust the margin between posters as needed */
+}
+
+@keyframes movePosters {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Adjust the translation distance */
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Video with Images</title>
+    <link rel="stylesheet" href="video.css" type="text/css">
+    <style>
+    </style>
+</head>
+<body>
+    <div id="video-container">
+        <iframe
+            src="https://www.youtube.com/embed/Cma2rdP_3gw?rel=0&autoplay=1&mute=1" 
+            frameborder="0"
+            allowfullscreen
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+        </iframe>
+        <!-- Added &autoplay=1 and &mute=1 to enable autoplay and mute the video -->
+       
+        <div class="overlay">
+            <div class="buttons-container">
+                <button class="button" onclick="filterByType('free')">Free</button>
+                <button class="button" onclick="filterByType('premium')">Premium</button>
+            </div>
+        </div>
+
+        <div class="overlay-link">
+            <div class="viewall">
+                <a href="movies.html" class="view-all-link">View All</a>
+            </div>
+        </div>
+
+        <div class="overlay-images">
+            <div class="poster-container">
+                <!-- Add your overlay images here -->
+                <img class="poster" src="https://mir-s3-cdn-cf.behance.net/project_modules/hd/be030e77758917.5c911d5121625.png" alt="Poster 1">
+                <img class="poster" src="https://c8.alamy.com/comp/2JE359T/prabhas-poster-baahubali-the-beginning-2015-2JE359T.jpg" alt="Poster 2">
+                <img class="poster" src="https://www.91-cdn.com/hub/wp-content/uploads/2023/10/Jawan.png" alt="Poster 3">
+                <img class="poster" src="https://static-koimoi.akamaized.net/wp-content/new-galleries/2018/12/kgf-chapter-1-movie-review-yashs-journey-from-style-to-stale-1.jpg" alt="Poster 4">
+                <img class="poster" src="https://i0.wp.com/moviegalleri.net/wp-content/uploads/2022/08/Rajinikanth-Jailer-Movie-First-Look-Poster-HD.jpg?resize=983%2C1536&ssl=1" alt="Poster 5">
+                <img class="poster" src="https://i0.wp.com/telugubullet.com/wp-content/uploads/2020/04/Pushpa-Movie-Poster-1.jpg" alt="Poster 6">
+                <!-- Add more images as needed -->
+            </div>
+        </div>
+    </div>
+    <!-- Include the YouTube API script -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
